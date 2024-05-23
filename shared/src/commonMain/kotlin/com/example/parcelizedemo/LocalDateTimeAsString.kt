@@ -9,7 +9,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 
-typealias LocalDateTimeAsString = @Serializable(LocalDateTimeAsStringSerializer::class) LocalDateTime
+typealias LocalDateTimeAsString = LocalDateTime
 
 object LocalDateTimeAsStringSerializer : KSerializer<LocalDateTime> {
 
