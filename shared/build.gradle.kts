@@ -35,6 +35,19 @@ kotlin {
         commonTest.dependencies {
         }
     }
+
+    targets.configureEach {
+        compilations.configureEach {
+            compileTaskProvider.configure {
+                compilerOptions {
+                    freeCompilerArgs.addAll(
+                        "-P",
+                        "plugin:org.jetbrains.kotlin.parcelize:additionalAnnotation=com.example.parcelizedemo.CommonParcelize",
+                    )
+                }
+            }
+        }
+    }
 }
 
 android {

@@ -1,6 +1,6 @@
 [versions]
 agp = "8.3.2"
-kotlin = "1.9.20"
+kotlin = "2.0.0"
 
 kotlinxDatetime = "0.6.0-RC.2" # https://github.com/Kotlin/kotlinx-datetime/releases
 kotlinxSerializationJson = "1.6.3" # https://kotlinlang.org/docs/serialization.html#example-json-serialization
